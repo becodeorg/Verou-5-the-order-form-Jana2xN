@@ -5,15 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css"
-          rel="stylesheet"/>
+        rel="stylesheet"/>
     <title>Your fancy store</title>
 </head>
 <body>
 <div class="container">
-    <h1>Place your order</h1>
+    <h1>Enchanted Spirits & Spells</h1>
+    <h2>Place your order</h2>
     <?php // Navigation for when you need it ?>
     <?php /*
     <nav>

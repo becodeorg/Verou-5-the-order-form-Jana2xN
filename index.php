@@ -21,9 +21,15 @@ function whatIsHappening() {
     var_dump($_SESSION);
 }
 
-// TODO: provide some products (you may overwrite the example)
 $products = [
-    ['name' => 'Your favourite drink', 'price' => 2.5],
+    ['name' => 'Spellbinding Serums', 'price' => 13.60],
+    ['name' => 'Crystal Cauldrons', 'price' => 32.40],
+    ['name' => 'Glowing Goblets', 'price' => 21.50],
+    ['name' => 'Wand Whittling Kits', 'price' => 17.75],
+    ['name' => 'Familiar Finders', 'price' => 42.85],
+    ['name' => 'Incantation Instruction Manuals', 'price' => 8.25],
+    ['name' => 'Grimoire Journals', 'price' => 13.95],
+    ['name' => 'Mystic Mists', 'price' => 10.50],
 ];
 
 $totalValue = 0;
