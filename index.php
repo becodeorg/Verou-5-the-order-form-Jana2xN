@@ -40,10 +40,33 @@ $products = [
 
 $totalValue = 0;
 
+// This function will send a list of invalid fields back
 function validate()
 {
-    // TODO: This function will send a list of invalid fields back
-    return [];
+    $errors = [];
+    if (!isset($_POST["products"])) {
+        $errors["products"] = "Please select a product";
+    }
+    if (empty($_POST["email"])) {
+        $errors["email"] = "Please enter an email address";
+    } elseif (!filter_var(($_POST["email"]), FILTER_VALIDATE_EMAIL)) {
+        $errors["email"] = "Please provide a valid email address";
+    }
+    if (empty($_POST["street"])) {
+        $errors["street"] = "Please enter a valid street address";
+    }
+    if (empty($_POST["streetnumber"])) {
+        $errors["streetnumber"] = "Please enter a valid street number";
+    }
+    if (empty($_POST["city"])) {
+        $errors["city"] = "Please enter a valid city";
+    }
+    if (empty($_POST["zipcode"])) {
+        $errors["zipcode"] = "Please enter a valid zipcode";
+    } elseif (!is_numeric($_POST["zipcode"])) {
+        $errors["zipcode"] = "Please provide a valid zipcode";
+    }
+    return $errors;
 }
 
 function handleForm()
