@@ -9,6 +9,12 @@ declare(strict_types=1);
 // We are going to use session variables so we need to enable sessions
 session_start();
 
+// Store the current input data in the session
+$_SESSION['input_data'] = $_POST;
+
+// Use the current input data, if available, otherwise return empty string
+$inputData = $_SESSION['input_data'] ?? [];
+
 // Use this function when you need to need an overview of these variables
 function whatIsHappening() {
     echo '<h2>$_GET</h2>';
